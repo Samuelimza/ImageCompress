@@ -48,7 +48,6 @@ for i in range(0,max_iter):
 centroids=np.array(sess.run(centroids),dtype=np.uint8)
 centroids_index=np.array(sess.run(centroids_index),dtype=np.uint8)
 centroids_index=np.reshape(centroids_index,[a,b],2)
-print(np.shape(centroids_index))
 np.save(path+'\codebook.npy',centroids)
 cv2.imwrite(path+'\compressed.png',centroids_index)
 
