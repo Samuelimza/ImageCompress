@@ -2,7 +2,6 @@ import numpy as np
 import tensorflow as tf
 import random
 import cv2
-import glob2
 
 
 #loading the required data
