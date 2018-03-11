@@ -15,4 +15,4 @@ To decompress the files follow:
 2. Run the Run.jar.
 3. Paste the path in the second field and press decompress.
 4. You should now have a new file in the directry as compressed1.png.
-5. this is the lossy compressed version of your original image.
+5. This is the lossy decompressed version of your original image.
