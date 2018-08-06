@@ -1,5 +1,3 @@
-import java.util.*;
-
 import javax.swing.*;
 
 import java.awt.*;
@@ -51,7 +49,7 @@ public class Manage implements ActionListener {
 
 	void runCompress(){
 		try {
-			Process p = Runtime.getRuntime().exec("python C:/Users/Ashhad/Desktop/Project/file0.py");
+			Process p = Runtime.getRuntime().exec("python backend/file0.py");
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
@@ -59,7 +57,7 @@ public class Manage implements ActionListener {
 	
 	void runDecompress(){
 		try {
-			Process p = Runtime.getRuntime().exec("python C:/Users/Ashhad/Desktop/Project/file1.py");
+			Process p = Runtime.getRuntime().exec("python backend/file1.py");
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
@@ -76,7 +74,7 @@ public class Manage implements ActionListener {
 			dPath = decompressionPath.getText();
 		}
 		if(flag == 0){
-			String filename = "path.txt";
+			String filename = "backend/path.txt";
 			try {
 				BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 				writer.write(cPath);
@@ -86,7 +84,7 @@ public class Manage implements ActionListener {
 			}
 			runCompress();
 		}else if(flag == 1){
-			String filename = "path.txt";
+			String filename = "backend/path.txt";
 			try {
 				BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 				writer.write(dPath);
